@@ -1,0 +1,16 @@
+#clock {
+      font-size: 50px;
+      font-family: Arial, sans-serif;
+      color: darkred;
+      background-color: lightgreen;
+      border-radius: 20px;
+      height: 50px;
+      width: 200px;
+    }
+h1{
+      color: rgb(156, 7, 146);
+      background-color: pink;
+      border-radius: 10px;
+      height: 50px;
+      width: 200px;
+    }

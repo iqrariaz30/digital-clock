@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Digital Clock</h1>
+  <div id="clock"></div>
+<script>
+// Create a new Date object
+var date = new Date();
+
+// Get the current hours, minutes, and seconds
+var hours = date.getHours();
+var minutes = date.getMinutes();
+var seconds = date.getSeconds();
+
+// Convert the hours, minutes, and seconds to a 12-hour format
+if (hours > 12) {
+  hours -= 12;
+}
+
+if (minutes < 10) {
+  minutes = "0" + minutes;
+}
+
+if (seconds < 10) {
+  seconds = "0" + seconds;
+}
+
+// Display the current time in the clock div
+document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+// Update the clock every second
+setInterval(function() {
+  // Create a new Date object
+  var date = new Date();
+
+  // Get the current hours, minutes, and seconds
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+
+  // Convert the hours, minutes, and seconds to a 12-hour format
+  if (hours > 12) {
+    hours -= 12;
+  }
+
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  // Display the current time in the clock div
+  document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+}, 1000);
+</script>
+</body>
+</html>
